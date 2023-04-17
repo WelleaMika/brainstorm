@@ -25,7 +25,7 @@ function searchGCD (int $firstNumber, int $secondNumber)
 $firstNumber = rand();
 $secondNumber = rand();
 
-echo 'Сгенерированное число A:' . "<br>" . $firstNumber . "<br>";
-echo 'Сгенерированное число B:' . "<br>" . $secondNumber . "<br>";
+echo 'Сгенерированное число N:' . "<br>" . $firstNumber . "<br>";
+echo 'Сгенерированное число M:' . "<br>" . $secondNumber . "<br>";
 echo 'НОД двух чисел:' . "<br>" . searchGCD ($firstNumber, $secondNumber);
 
