@@ -5,6 +5,8 @@
 
 function clarification (int $number)
 {
+    $number = abs($number);
+    
     while ($number > 9) {
         $firstDigit = $number % 10;
         $number = (int) ($number / 10);
