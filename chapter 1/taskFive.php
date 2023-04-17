@@ -34,7 +34,7 @@ function determinant (int $number)
                 return ' не';
             }
         }
-    }else {
+    } else {
         return ' не';
     }
     
