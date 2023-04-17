@@ -5,12 +5,10 @@
 
 function clarification (int $number)
 {
-    while ($number > 9)
-    {
+    while ($number > 9) {
         $firstDigit = $number % 10;
         $number = (int) ($number / 10);
-        if(($number % 10) <= ($firstDigit))
-        {
+        if(($number % 10) <= ($firstDigit)) {
             return 'не ';
         }
     }
@@ -18,6 +16,7 @@ function clarification (int $number)
 }
 
 $number = rand();
+
 echo 'Сгенерированное число:' . "<br>" . $number . "<br>";
 echo 'Цифры данного натурального числа ' . clarification($number) . 'образуют возрастающую последовательность';
 
