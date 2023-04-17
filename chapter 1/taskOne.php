@@ -5,10 +5,9 @@
 function determinant (int $number)
 {
     $count = 0;
-    while ($number > 0)
-    {
-        if(($number % 10) < 5)
-        {
+    
+    while ($number > 0) {
+        if(($number % 10) < 5) {
             $count++;
         }
         $number = (int) ($number / 10);
@@ -17,6 +16,7 @@ function determinant (int $number)
 }
 
 $number = rand();
+
 echo 'Сгенерированное число:' . "<br>" . $number . "<br>";
 echo 'Количество цифр, меньших 5:' . "<br>" . determinant($number);
 
