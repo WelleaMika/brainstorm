@@ -4,6 +4,8 @@
 
 function determinant (int $number)
 {
+    
+    $number = abs($number);
     $count = 0;
     
     while ($number > 0) {
