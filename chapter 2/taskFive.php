@@ -5,7 +5,7 @@
 последовательности.
 */
 
-function insert (array $array, int $length)
+function permutation (array $array, int $length)
 {
 
     $countZero = 0;
@@ -54,8 +54,8 @@ $elements = array();
 
 echo '<br>';
 
-$newArray = insert ($array, $length);
-echo 'Новый массив' . "<br>";
+$newArray = permutation ($array, $length);
+echo 'Переставленый массив' . "<br>";
 for ($i = 0; $i < $length; $i++){
     echo "$i эллемент массива: " . $newArray[$i] . "<br>";
 }
