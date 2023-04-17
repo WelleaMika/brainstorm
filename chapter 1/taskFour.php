@@ -35,8 +35,7 @@ for ($i = 2037; $i <= 7320; $i++)
         }
     $number = (int) ($number / 10);
     }
-    if(($countZero == 1) && ($countTwo == 1) && ($countThree == 1) && ($countSeven == 1))
-    {
+    if(($countZero == 1) && ($countTwo == 1) && ($countThree == 1) && ($countSeven == 1)) {
         $arr[] = $i;
     }
 }
