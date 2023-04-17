@@ -8,18 +8,16 @@
 
 $arr = array();
 
-for ($i = 2037; $i <= 7320; $i++)    
-{
+for ($i = 2037; $i <= 7320; $i++) {
 
     $number = $i;
     $countZero = 0;
     $countTwo = 0;
     $countThree = 0;
     $countSeven = 0;
-    while ($number > 0)
-    {
-        switch ($number % 10) 
-        {
+    
+    while ($number > 0) {
+        switch ($number % 10) {
             case 0:
                 $countZero++;
                 break;
