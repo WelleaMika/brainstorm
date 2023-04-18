@@ -8,7 +8,9 @@
 function determinant (int $number)
 {
 
-    $number      = abs($number);
+    if($number < 0){
+        return' не';
+    }
     $count       = 0;
     $cloneNumber = $number;
 
@@ -40,9 +42,8 @@ function determinant (int $number)
     
     return '';
 }
-$firstNumber  = rand();
-$secondNumber = rand();
-$number       = 2*$firstNumber + $secondNumber;
+
+$number       = rand();
 
 echo 'Сгенерированное число n:' . "<br>" . $firstNumber . "<br>";
 echo 'Сгенерированное число m:' . "<br>" . $secondNumber . "<br>";
