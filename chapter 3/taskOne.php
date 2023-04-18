@@ -15,13 +15,13 @@ function summation (array $array, int $length)
     for ($y = 0; $y < $length; $y++){
         for ($x = 0; $x < $length; $x++){
             if ($x == $y){
-            $sumDiag  += $array[$x][$y];
+            $sumDiag  += $array[$y][$x];
             }
             if ($x < $y){
-            $sumBelow += $array[$x][$y];
+            $sumBelow += $array[$y][$x];
             }
             if ($x > $y){
-            $sumUp    += $array[$x][$y];
+            $sumUp    += $array[$y][$x];
             }
         }
     }
@@ -34,15 +34,14 @@ function summation (array $array, int $length)
 $length       = rand(1, 20);
 $array        = array();
 
-echo 'Длина массива A(N,N):' . $length . "<br><br>";
+echo 'Длина массива A(N):' . $length . "<br><br>";
 echo 'Сгенерированный массив' . "<br>";
 for ($y = 0; $y < $length; $y++){
     for ($x = 0; $x < $length; $x++){
-    $array[$x][$y] = rand(0, 9);
-    echo $array[$x][$y] . "   ";
+    $array[$y][$x] = rand(0, 9);
+    echo $array[$y][$x] . "   ";
     }
     echo '</br>';
 }
 
 summation($array, $length);
-}
