@@ -34,7 +34,7 @@ function summation (array $array, int $length)
 $length       = rand(1, 20);
 $array        = array();
 
-echo 'Длина массива A(N):' . $length . "<br><br>";
+echo 'Длина массива A(N,N):' . $length . "<br><br>";
 echo 'Сгенерированный массив' . "<br>";
 for ($y = 0; $y < $length; $y++){
     for ($x = 0; $x < $length; $x++){
