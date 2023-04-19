@@ -4,7 +4,7 @@
 В массиве А(N,M) расположить строки по убыванию значений максимальных элементов строк.
 */
 
-function insertion (array $array, int $height, int $length)
+function changing (array $array, int $height, int $length)
 {
     $count    = 0;
     $tmpCount = 0;
@@ -58,7 +58,7 @@ for ($y = 0; $y < $height; $y++){
 }
 echo '</br>';
 
-$array = insertion($array, $height, $length,);
+$array = changing($array, $height, $length,);
 
 echo 'Новый массив' . "<br>";
 for ($y = 0; $y < $height; $y++){
