@@ -6,9 +6,7 @@
 
 function changing (array $array, int $height, int $length)
 {
-    $count    = 0;
-    $tmpCount = 0;
-    $xAlt     = 0;
+
     $newArray = array();
     $elements = array();
 
